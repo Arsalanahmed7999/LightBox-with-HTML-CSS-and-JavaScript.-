@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightBox</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .myImage {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-main {
+            width: 700px;
+            height: 450px;
+            cursor: pointer;
+        border-radius: 10px;
+        }
+        /* lightbox */
+        .lightBoxContainer{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.904);
+            display: none;
+        }
+        .display-flex{
+            display: flex;
+        }
+        .btn{
+            font-size: 30px;
+            color: white;
+            text-align:right ;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Light Box Effect with HTML CSS and JavaScript</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt voluptatem omnis voluptatibus sapiente
+        aut, blanditiis deleniti minima illo quas consequatur temporibus eaque eos delectus iure ad labore laborum porro
+        provident sequi ipsa! Nam, ut fugiat? Dolorum sapiente hic iste fugit natus culpa eveniet est, enim molestias,
+        illum vitae corrupti quod eos doloribus atque voluptas tempore aliquid. Numquam deserunt laudantium perspiciatis
+        quo officia pariatur quod ratione, dolores exercitationem eligendi quas est dicta quia explicabo impedit,
+        dignissimos doloremque, porro repellat neque quisquam possimus. Quam reprehenderit consequatur ullam, neque
+        laboriosam culpa non, alias deleniti magni, eos corporis dolorum enim deserunt quae blanditiis!
+    </p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore quas error autem maxime voluptatem, nesciunt,
+        laudantium, officiis provident aperiam porro natus reprehenderit a atque? Repellendus delectus cumque nemo non
+        sint!
+    </p>
+    <div class="myImage">
+        <img src="image.jpg" alt="img" class="image-main" type="button" ondblclick="myFunction()">
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti laborum, fuga, dignissimos et corporis
+        doloribus neque ullam at ex odit molestiae. Placeat dicta labore dignissimos, modi porro a exercitationem quos
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum officiis obcaecati animi quibusdam dolorum, dolor
+        consequuntur molestiae odit, tempore, voluptas natus velit necessitatibus architecto sit dignissimos? Omnis
+        cumque doloremque odio provident debitis. Dolorem, nihil nostrum! Illo necessitatibus, omnis asperiores tempora
+        optio eos iure magni odit inventore sequi a eaque commodi cum sint ex non nam! Dignissimos voluptas labore, id
+        quisquam nesciunt amet recusandae saepe et sint ipsa dolores blanditiis ratione? Modi accusantium cupiditate
+        adipisci tempora vel iste dolore porro obcaecati, velit expedita maiores nihil itaque fugit, est suscipit
+        architecto excepturi aliquid laboriosam eveniet? Ratione sit reprehenderit omnis laudantium incidunt assumenda
+        molestias dolorem, suscipit officia? Saepe eveniet quis labore molestias soluta illo voluptatem voluptate
+        ratione, veritatis tenetur laudantium minima quos magnam aut architecto? Debitis, vitae eligendi et soluta
+        labore officia natus eum tenetur inventore temporibus dolorum accusantium blanditiis obcaecati necessitatibus
+        sunt iusto, aut eaque facilis expedita delectus minus quia numquam nam. Eveniet nihil, in minus at quasi
+        assumenda vero laboriosam recusandae quis quia perferendis culpa quisquam harum soluta optio id et atque animi
+        tenetur obcaecati corporis! Sunt odit numquam minus iure, id rerum quasi. Repellat libero, voluptatem
+        consequatur architecto dolorum recusandae minus vel sunt nisi tenetur? Distinctio praesentium saepe delectus
+        est?
+    </p>
+
+    <div class="lightBoxContainer">
+        <div class="lightbox">
+            <h3 type="button" class="btn">X</h3>
+            <img src="image.jpg" alt="img" class="image-main">
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
